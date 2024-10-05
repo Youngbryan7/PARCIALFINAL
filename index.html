@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nueva Tienda de Juegos - Estilo Steam</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="images/steam-logo-transparent.png" alt="Logo" class="logo" />
+
+        <nav>
+          <ul>
+            <li><a href="#home">Tienda</a></li>
+            <li><a href="#games">Biblioteca</a></li>
+            <li><a href="#community">Comunidad</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="games">
+        <h2>Bienvenido a steam</h2>
+        <h3>Explorar por Categorias:</h3>
+        <div id="filters">
+          <button class="filter-btn active" data-category="all">Todos</button>
+          <button class="filter-btn" data-category="free-to-play">
+            Free to Play
+          </button>
+          <button class="filter-btn" data-category="action">Acción</button>
+          <button class="filter-btn" data-category="adventure">Aventura</button>
+          <button class="filter-btn" data-category="Sport">Deporte</button>
+        </div>
+        <div id="game-list"></div>
+      </section>
+
+      <div id="game-detail-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="game-detail-content"></div>
+        </div>
+      </div>
+    </main>
+    <h2>Registra tu juego aqui:</h2>
+    <form id="developer-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="game">Nombre del Juego:</label>
+      <input type="text" id="game" name="game" required />
+
+      <label for="link">Enlace:</label>
+      <input type="url" id="link" name="link" required />
+
+      <button type="submit">Registrar</button>
+    </form>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Nueva Tienda de Juegos.TODOS LOS DERECHOS RESERVADOS.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
